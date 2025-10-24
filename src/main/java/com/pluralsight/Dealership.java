@@ -40,7 +40,7 @@ public class Dealership {
 
     }
     public ArrayList<Vehicle> getAllVehicles() {
-        return null;
+        return inventory;
 
     }
     public Vehicle addVehicle(Vehicle vehicle){

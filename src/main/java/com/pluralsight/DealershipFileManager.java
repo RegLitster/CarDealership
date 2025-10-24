@@ -5,7 +5,8 @@ import java.io.FileReader;
 import java.util.ArrayList;
 
 public class DealershipFileManager {
-    public static ArrayList<Vehicle> parseInventory() {
+
+    public ArrayList<Vehicle> getDealership () {
         ArrayList<Vehicle> vehicles = new ArrayList<>();
         try (BufferedReader bufReader = new BufferedReader(new FileReader("src/main/resources/inventory.csv"))) {
             bufReader.readLine();
@@ -32,5 +33,9 @@ public class DealershipFileManager {
             System.out.println("Error reading file" + e.getMessage());
         }
         return vehicles;
+    }
+
+    public Dealership saveDealership (Dealership dealership){
+        return null;
     }
 }

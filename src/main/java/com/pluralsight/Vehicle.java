@@ -56,7 +56,8 @@ public class Vehicle {
     public double getPrice() {
         return price;
     }
+
     public String toString() {
-        return vin + " " + year + " " + make + " "+ model + " " + vehicleType + " " + color + " " + odometer + " " + price;
+        return vin + " " + year + " " + make + " " + model + " " + vehicleType + " " + color + " " + odometer + " " + price;
     }
 }

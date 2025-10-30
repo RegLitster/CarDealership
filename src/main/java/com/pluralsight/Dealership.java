@@ -15,40 +15,52 @@ public class Dealership {
         this.inventory = inventory;
     }
 
-    public ArrayList<Vehicle> getVehiclesByPrice(){
+    public ArrayList<Vehicle> getVehiclesByPrice() {
         return null;
 
     }
-    public ArrayList<Vehicle> getVehiclesByMakeModel(){
+
+    public ArrayList<Vehicle> getVehiclesByMakeModel() {
         return null;
 
     }
-    public ArrayList<Vehicle> getVehiclesByYear(){
+
+    public ArrayList<Vehicle> getVehiclesByYear() {
         return null;
 
     }
-    public ArrayList<Vehicle> getVehiclesByColor(){
+
+    public ArrayList<Vehicle> getVehiclesByColor() {
         return null;
 
     }
-    public ArrayList<Vehicle> getVehiclesByMileage(){
+
+    public ArrayList<Vehicle> getVehiclesByMileage() {
         return null;
 
     }
-    public ArrayList<Vehicle> getVehiclesByType(){
+
+    public ArrayList<Vehicle> getVehiclesByType() {
         return null;
 
     }
+
     public ArrayList<Vehicle> getAllVehicles() {
         return inventory;
 
     }
-    public Vehicle addVehicle(Vehicle vehicle){
+
+    public Vehicle addVehicle(Vehicle vehicle) {
         inventory.add(vehicle);
         return vehicle;
     }
-    public Vehicle removeVehicle(Vehicle vehicle){
+
+    public Vehicle removeVehicle(Vehicle vehicle) {
         inventory.remove(vehicle);
         return null;
+    }
+
+    public String toString() {
+        return dealershipName + " " + dealershipAddress + " " + dealershipPhone;
     }
 }

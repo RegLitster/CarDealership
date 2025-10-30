@@ -21,8 +21,8 @@ public class UserInterface {
     public void display() {
         init();
         boolean run = true;
+        System.out.println("=====Welcome to The Dealership==== \nPlease Make A Selection");
         while (run) {
-            System.out.println("=====Welcome to The Dealership==== \nPlease Make A Selection");
             displayMenu();
             int selection = scanner.nextInt();
 
@@ -58,7 +58,6 @@ public class UserInterface {
 
     public void displayMenu() {
         System.out.println("""
-                  =====Welcome to The Dealership====
                   1 - Find vehicles within a price range
                   2 - Find vehicles by make / model
                   3 - Find vehicles by year range
@@ -72,10 +71,12 @@ public class UserInterface {
                 """);
 
     }
+
     private void processAllVehiclesRequest() {
         ArrayList<Vehicle> allVehicles = dealership.getAllVehicles();
         displayVehicles(allVehicles);
     }
+
     private void displayVehicles(ArrayList<Vehicle> vehicles) {
         for (Vehicle vehicle : vehicles) {
             System.out.println(vehicle);

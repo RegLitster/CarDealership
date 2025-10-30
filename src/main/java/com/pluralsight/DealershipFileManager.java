@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class DealershipFileManager {
 
-    public Dealership getDealership () {
+    public Dealership getDealership() {
 
         Dealership dealership = null;
         try (BufferedReader bufReader = new BufferedReader(new FileReader("src/main/resources/inventory.csv"))) {
@@ -46,7 +46,7 @@ public class DealershipFileManager {
         return dealership;
     }
 
-    public Dealership saveDealership (Dealership dealership){
+    public Dealership saveDealership(Dealership dealership) {
         return null;
     }
 }
